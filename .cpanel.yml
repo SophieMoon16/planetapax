@@ -10,6 +10,11 @@ deployment:
     - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp .gitignore $DEPLOYPATH
 
-    #Copier les dossiers de l'app
+    # Copier les dossiers de l'app
     - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp -R views $DEPLOYPATH
+
+    # Installer les dépendances et restart
+    - cd $DEPLOYPATH
+    - /home/luso8827/nodevenv/planetapax/22/bin/npm install --production
+    - touch tmp/restart.txt
