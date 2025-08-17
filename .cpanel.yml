@@ -1,20 +1,15 @@
 deployment:
   tasks:
-    # Définir le chemin de déploiement
+    # Define the deployment path
     - export DEPLOYPATH=/home/luso8827/planetapax/
 
-    # Copier les fichiers de l'app
+    # Copy app's files
     - /bin/cp app.js $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp package-lock.json $DEPLOYPATH
     - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp .gitignore $DEPLOYPATH
 
-    # Copier les dossiers de l'app
+    # Copy app's folders
     - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp -R views $DEPLOYPATH
-
-    # Installer les dépendances et restart
-    - cd $DEPLOYPATH
-    - /home/luso8827/nodevenv/planetapax/22/bin/npm install --production
-    - touch tmp/restart.txt

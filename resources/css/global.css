@@ -1,0 +1,160 @@
+/*General design styles */
+
+body {
+  margin: 0;
+  padding: 0 6rem 0 6rem;
+  border: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  background-color: rgb(255, 255, 255);
+}
+
+.page {
+  text-align: justify;
+  background-color: white;
+  border-color: lightgray;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.img-hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.titles {
+  text-align: center;
+}
+
+p {
+  line-height: 2;
+}
+
+.green {
+  color: #23b298;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(38, 38, 134);
+}
+
+/*Header navigation design styles */
+
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+  font-size: small;
+  color: black;
+}
+
+.sidenav {
+  display: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+}
+
+ul {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 3rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/*Footer design styles */
+
+footer {
+  font-size: small;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.rights {
+  padding: 1rem;
+}
+.admin {
+  line-height: 2rem;
+}
+
+/*Responsive design for tablets and mobiles */
+@media (max-width: 900px) {
+  body {
+    padding: 0 2rem 0 2rem;
+  }
+
+  ul {
+    display: none;
+  }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: lightgray;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 5rem;
+  }
+
+  .centernav {
+    padding: 1rem;
+    text-align: right;
+    font-size: smaller;
+  }
+
+  .sidenav a {
+    padding: 0.7rem;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #000000;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    margin-left: 8rem;
+  }
+}
