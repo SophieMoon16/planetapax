@@ -98,11 +98,15 @@ ul {
 footer {
   font-size: small;
   text-align: center;
-  margin-top: 3rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .rights {
-  padding: 1rem;
+  padding: 0 1rem 0 1rem;
 }
 .admin {
   line-height: 2rem;
@@ -124,7 +128,7 @@ footer {
   }
 
   .page {
-    padding: 0 1rem 0 1rem;
+    padding: 0 1.5rem 0 1.5rem;
     border-style: none;
   }
 
@@ -182,5 +186,10 @@ footer {
     top: 0;
     font-size: 2rem;
     margin-left: 8rem;
+  }
+  footer {
+    padding: 0 1.5rem 0 1.5rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
   }
 }
