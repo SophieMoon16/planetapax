@@ -1,8 +1,9 @@
 .hero {
   display: flex;
+  flex-flow: nowrap;
   justify-items: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 1rem;
   border-style: solid;
   border-width: 1px;
@@ -19,6 +20,7 @@
   transform: scale(1.05);
 }
 .button {
+  background-color: white;
   padding: 0.8rem;
   border-radius: 0.3rem;
   border-style: solid;
@@ -74,16 +76,20 @@
 }
 
 /*Responsive design for tablets and mobiles */
-@media (max-width: 1024px) {
+@media (max-width: 985px) {
   .hero {
     display: grid;
     border-style: none;
-    padding: 0;
-    line-height: 2;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: rgb(255, 248, 242);
   }
 
   .padding {
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .hero-text {
+    text-align: center;
   }
 
   .hero-img-div {
