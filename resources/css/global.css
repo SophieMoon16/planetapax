@@ -36,6 +36,9 @@ body {
 p {
   line-height: 2;
 }
+.justify {
+  text-align: justify;
+}
 
 .green {
   color: #23b298;
