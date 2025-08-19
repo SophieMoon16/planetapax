@@ -10,7 +10,7 @@ app.set("views", path.join(__dirname, "views"));
 // Serve static files from the resources directory
 app.use(express.static(path.join(__dirname, "resources")));
 
-// ROUTES
+// ===== ROUTES =====
 // Main route for home page
 app.get("/", (req, res) => {
   res.render("index", {
@@ -25,10 +25,31 @@ app.get("/manifesto", (req, res) => {
   });
 });
 
-// Route for faq page
+// Route for the faq page
 app.get("/faq", (req, res) => {
   res.render("faq", {
     title: "Foire Aux Questions",
+  });
+});
+
+// Route for the legal mentions page
+app.get("/mentions-legales", (req, res) => {
+  res.render("legal", {
+    title: "Nos Mentions Légales",
+  });
+});
+
+// Route for the terms of use page
+app.get("/cgu", (req, res) => {
+  res.render("cgu", {
+    title: "Nos Conditions générales d'utilisation",
+  });
+});
+
+// Route for the privacy policy page
+app.get("/politique-de-confidentialite", (req, res) => {
+  res.render("privacy", {
+    title: "Notre Politique de Confidentialité",
   });
 });
 

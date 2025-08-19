@@ -13,7 +13,7 @@
 
 .hero-img {
   width: 28rem;
-  margin-left: 6rem;
+  margin-left: 2rem;
 }
 .hero-img:hover {
   transform: scale(1.05);
@@ -24,9 +24,9 @@
   border-style: solid;
   border-width: 1px;
   border-color: lightgray;
-  font-size: medium;
-  margin: 1rem 1.5rem 1rem 0rem;
-  width: 11rem;
+  font-size: small;
+  margin: 1rem 1rem 1rem 0rem;
+  width: 9rem;
 }
 
 .button:hover {
@@ -74,14 +74,11 @@
 }
 
 /*Responsive design for tablets and mobiles */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .hero {
     display: grid;
-    background-color: white;
-    border-radius: 1rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgray;
+    border-style: none;
+    padding: 0;
     line-height: 2;
   }
 
@@ -99,6 +96,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     gap: 0.7rem;
+    font-size: small;
   }
 
   .button {

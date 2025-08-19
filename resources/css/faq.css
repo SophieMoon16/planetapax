@@ -1,5 +1,5 @@
 .box {
-  margin: 1.2rem;
+  margin: 1.2rem 0 1.2rem 0;
 }
 
 .accordion {
@@ -20,7 +20,7 @@
   background-color: #ccc;
 }
 
-.accordion:after {
+.accordion::after {
   content: "\002B";
   color: #777;
   font-weight: bold;
@@ -28,7 +28,7 @@
   margin-left: 5px;
 }
 
-.active:after {
+.active::after {
   content: "\2212";
 }
 
@@ -39,4 +39,14 @@
   font-size: 0.9rem;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+/*Responsive design for tablets and mobiles */
+@media (max-width: 900px) {
+  .box {
+    margin: 1rem 0 1rem 0;
+  }
+  .accordion {
+    font-size: 0.8rem;
+  }
 }
